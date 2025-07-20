@@ -150,6 +150,7 @@ button:focus {
   text-align: center;
   color: #fff;
   margin-bottom: 48px;
+  width: 496px;
 }
 .hero-container {
   text-align: center;
@@ -194,9 +195,12 @@ h2 {
 
 .ttl-team {
   text-align: center;
+  padding-bottom: 72px;
 }
 .team {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .team-list-item {
   background-color: #fff;
@@ -206,10 +210,12 @@ h2 {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-list {
-  display: block;
-  align-items: center;
-
+  display: flex;
   gap: 24px;
+}
+.team-text {
+  text-align: center;
+  padding: 32px 16px;
 }
 
 /* #endregion Section 2 */
@@ -219,6 +225,7 @@ h2 {
 .ttl-portfolio {
   text-transform: capitalize;
   text-align: center;
+  padding-bottom: 72px;
 }
 
 .paragraph-portfolio {
@@ -228,10 +235,11 @@ h2 {
   letter-spacing: 0.02em;
 }
 .portfolio-list {
-  display: flex;
-  align-items: center;
+  display: grid; /* Використовуємо Grid */
+  grid-template-columns: repeat(3, 1fr);
   background-color: #ffffff;
-  flex-wrap: wrap;
+  width: calc((100% - 3 * 24px) / 4);
+  gap: 48px 24px;
 }
 .portfolio-item {
   border: 1px solid #e7e9fc;
@@ -239,19 +247,39 @@ h2 {
 }
 
 .portfolio {
-  background-color: #f4f4fd;
+  background-color: inherit;
+  padding: 120px 0;
+}
+
+.portfolio-text {
+  padding: 32px 16px;
 }
 
 /* #endregion Section 3 */
 
 /* #region Footer */
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
-.page-footer p {
+.text-footer {
   color: #f4f4fd;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
+
+.footer-logo {
+  display: inline-block;
+}
+.text-footer {
+  width: 264px;
+  margin-top: 16px;
+}
+
 /* #endregion Footer */
