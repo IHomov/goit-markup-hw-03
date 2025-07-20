@@ -178,6 +178,9 @@ button:focus {
 }
 /*endregion hero*/
 /* #region Section 1 */
+.advanteges {
+  padding: 120px 0;
+}
 .section-one {
   display: flex;
   align-items: center;
@@ -274,6 +277,7 @@ h2 {
 .portfolio-text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-title {
   margin-bottom: 8px;
